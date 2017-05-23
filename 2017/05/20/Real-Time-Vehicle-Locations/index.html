@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Real-Time-Vehicle-Locations | Will | While there is life there is hope. 一息若存，希望不灭。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="Real-Time-Vehicle-Locations Breif Introduction PCClient folder GPSServer folder Future Work Team members   Breif Introductionwe use two terminal to achive our tracking vehicle location purpose.One is">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Real-Time-Vehicle-Locations">
+<meta property="og:url" content="http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/index.html">
+<meta property="og:site_name" content="Will">
+<meta property="og:description" content="Real-Time-Vehicle-Locations Breif Introduction PCClient folder GPSServer folder Future Work Team members   Breif Introductionwe use two terminal to achive our tracking vehicle location purpose.One is">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Real-Time-Vehicle-Locations/master/Image/Figure.png">
+<meta property="og:updated_time" content="2017-05-20T09:54:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Real-Time-Vehicle-Locations">
+<meta name="twitter:description" content="Real-Time-Vehicle-Locations Breif Introduction PCClient folder GPSServer folder Future Work Team members   Breif Introductionwe use two terminal to achive our tracking vehicle location purpose.One is">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/s2117402/Real-Time-Vehicle-Locations/master/Image/Figure.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Wei Sun</h5>
+          <a href="mailto:s2118231@gmail.com" title="s2118231@gmail.com" class="mail">s2118231@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/s2117402" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/u/3243274715" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Real-Time-Vehicle-Locations</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Real-Time-Vehicle-Locations</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-05-20T09:18:27.000Z" itemprop="datePublished" class="page-time">
+  2017-05-20
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Real-Time-Vehicle-Locations"><span class="post-toc-number">1.</span> <span class="post-toc-text">Real-Time-Vehicle-Locations</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Breif-Introduction"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Breif Introduction</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mobile-Terminal-PCClient-folder"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Mobile Terminal(PCClient folder)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Press-Send-button-will-send-the-context-in-edittext-to-the-server-press-Send-Cl-button-will-send-current-GPS-location-to-the-server-these-two-buttons-are-used-to-do-some-tests"><span class="post-toc-number">1.2.0.1.</span> <span class="post-toc-text">*Press Send button will send the context in edittext to the server,press Send Cl button will send current GPS location to the server(these two buttons are used to do some tests)</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Server-Terminal-GPSServer-folder"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Server Terminal(GPSServer folder)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Future-Work"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Future Work</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Team-members"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Team members</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Real-Time-Vehicle-Locations"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Real-Time-Vehicle-Locations</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-05-20 04:18:27" datetime="2017-05-20T09:18:27.000Z"  itemprop="datePublished">2017-05-20</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Real-Time-Vehicle-Locations"><a href="#Real-Time-Vehicle-Locations" class="headerlink" title="Real-Time-Vehicle-Locations"></a>Real-Time-Vehicle-Locations</h2><ul>
+<li>Breif Introduction</li>
+<li>PCClient folder</li>
+<li>GPSServer folder</li>
+<li>Future Work</li>
+<li>Team members</li>
+</ul>
+<hr>
+<h3 id="Breif-Introduction"><a href="#Breif-Introduction" class="headerlink" title="Breif Introduction"></a>Breif Introduction</h3><p>we use two terminal to achive our tracking vehicle location purpose.<br>One is the mobile terminal,we develop a android application and use the GPS sensor to collect the<br>location information and send it to the server by socket.We use the java socket and web socket to build<br>the connection for transmitting information.<br>The other terminal is the server terminal,we use js to finish this part,when web socket of our js project<br>accept the location from our android app,it will process it and display it on the google map(we use google map api).</p>
+<hr>
+<h3 id="Mobile-Terminal-PCClient-folder"><a href="#Mobile-Terminal-PCClient-folder" class="headerlink" title="Mobile Terminal(PCClient folder)"></a>Mobile Terminal(PCClient folder)</h3><p>In the PCClient folder,this is the android application.It in charge of collecting location data and transmitting it<br>to our js project which we deploy in server.The app will collect the GPS locations per fixed time,and send it to the server<br>by socket connection.(we need to set sepcific server IP before we use)</p>
+<p>Here is the picture show how the mobile app works.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Real-Time-Vehicle-Locations/master/Image/Figure.png" alt="Figure" title="">
+                </div>
+                <div class="image-caption">Figure</div>
+            </figure>
+<h5 id="Press-Send-button-will-send-the-context-in-edittext-to-the-server-press-Send-Cl-button-will-send-current-GPS-location-to-the-server-these-two-buttons-are-used-to-do-some-tests"><a href="#Press-Send-button-will-send-the-context-in-edittext-to-the-server-press-Send-Cl-button-will-send-current-GPS-location-to-the-server-these-two-buttons-are-used-to-do-some-tests" class="headerlink" title="*Press Send button will send the context in edittext to the server,press Send Cl button will send current GPS location to the server(these two buttons are used to do some tests)"></a>*Press Send button will send the context in edittext to the server,press Send Cl button will send current GPS location to the server(these two buttons are used to do some tests)</h5><hr>
+<h3 id="Server-Terminal-GPSServer-folder"><a href="#Server-Terminal-GPSServer-folder" class="headerlink" title="Server Terminal(GPSServer folder)"></a>Server Terminal(GPSServer folder)</h3><p>In the GPSServer folder,that’s a JS project we use to accept data from android application,and display the locations on<br>google map and form them as a track.</p>
+<p>we refered to this tutorials when we did this part.</p>
+<p><a href="https://www.pubnub.com/blog/2017-02-02-realtime-google-maps-tracking-and-live-geolocation-with-javascript/" target="_blank" rel="external">Link</a></p>
+<hr>
+<h3 id="Future-Work"><a href="#Future-Work" class="headerlink" title="Future Work"></a>Future Work</h3><p>we only achive the basic functionality of requirement,and we need restart the web server each time,and the server only can<br>process the information from one mobile terminal.GUI is too rough.The most important problem is we need to set a begining<br>point each time we start our js project in server.</p>
+<hr>
+<h3 id="Team-members"><a href="#Team-members" class="headerlink" title="Team members"></a>Team members</h3><p>This is a team project,I’m really grateful to my partner Kazi Amanul Islam Siddiqui,he contributed a lot to our project.<br>By the way,We learned much from some other projects,we refered much useful from internet,we really appreciate it,I’m sorry I<br>can’t remerber them and list them here.</p>
+<p><a href="https://github.com/s2117402/Real-Time-Vehicle-Locations" target="_blank" rel="external">Project in Github</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-05-20T09:54:31.000Z" itemprop="dateUpdated">2017-05-20 04:54:31</time>
+</span><br>
+
+
+        
+        While there is life there is hope. 一息若存，希望不灭。
+        
+    </div>
+    <footer>
+        <a href="http://willsun.win">
+            <img src="/img/avatar.jpg" alt="Wei Sun">
+            Wei Sun
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&title=《Real-Time-Vehicle-Locations》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&title=《Real-Time-Vehicle-Locations》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Real-Time-Vehicle-Locations》 — Will&url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/05/18/Leetcode6-Unique-Binary-Search-Trees/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Leetcode6 Unique Binary Search Trees</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 's2117402',
+            repo: 'comments',
+            oauth: {
+                client_id: '6799ba3f98debb9cd4be',
+                client_secret: 'c630aa845bba4d5b8c53a71fbe755a34673d8627',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Wei Sun &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&title=《Real-Time-Vehicle-Locations》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&title=《Real-Time-Vehicle-Locations》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Real-Time-Vehicle-Locations》 — Will&url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://willsun.win/2017/05/20/Real-Time-Vehicle-Locations/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
