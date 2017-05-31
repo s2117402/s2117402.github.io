@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Compus Mobile Application | Will | While there is life there is hope. 一息若存，希望不灭。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Java,Android,Google Map">
+    <meta name="description" content="Compus-Mobile-Application Introduction Welcome Activity Main Activity Login Activity Weather/Announcement/News Activity APK Installation   IntroductionThis is the graduation project for my bachelor de">
+<meta name="keywords" content="Java,Android,Google Map">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Compus Mobile Application">
+<meta property="og:url" content="http://willsun.win/2017/05/31/Compus-Mobile-Application/index.html">
+<meta property="og:site_name" content="Will">
+<meta property="og:description" content="Compus-Mobile-Application Introduction Welcome Activity Main Activity Login Activity Weather/Announcement/News Activity APK Installation   IntroductionThis is the graduation project for my bachelor de">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/welcome.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/main.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/information.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/login.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/grade.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/weather.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/announcement.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/news.png">
+<meta property="og:updated_time" content="2017-05-31T20:08:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Compus Mobile Application">
+<meta name="twitter:description" content="Compus-Mobile-Application Introduction Welcome Activity Main Activity Login Activity Weather/Announcement/News Activity APK Installation   IntroductionThis is the graduation project for my bachelor de">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/welcome.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Wei Sun</h5>
+          <a href="mailto:s2118231@gmail.com" title="s2118231@gmail.com" class="mail">s2118231@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/s2117402" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/u/3243274715" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Compus Mobile Application</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Compus Mobile Application</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-05-31T20:04:38.000Z" itemprop="datePublished" class="page-time">
+  2017-05-31
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Compus-Mobile-Application"><span class="post-toc-number">1.</span> <span class="post-toc-text">Compus-Mobile-Application</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Introduction"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Introduction</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Welcome-Activity"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Welcome Activity</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">
+                
+                    
+                    
+                
+                Welcome Activity
+            </span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Main-Activity"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Main Activity</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#About-MAP"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">About MAP</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#About-Popup"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">About Popup</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#About-Marquee-Bar"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">About Marquee Bar</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Login-Activity"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Login Activity</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Weather-Announcement-News-Activity"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">Weather/Announcement/News Activity</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#-1"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">
+                
+                    
+                    
+                
+                Weather
+            </span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#-2"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">
+                
+                    
+                    
+                
+                Announcement
+            </span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#-3"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">
+                
+                    
+                    
+                
+                News
+            </span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#The-Project-in-Github"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">The Project in Github</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#APK-Installation"><span class="post-toc-number">1.11.</span> <span class="post-toc-text">APK Installation</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Compus-Mobile-Application"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Compus Mobile Application</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-05-31 15:04:38" datetime="2017-05-31T20:04:38.000Z"  itemprop="datePublished">2017-05-31</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Compus-Mobile-Application"><a href="#Compus-Mobile-Application" class="headerlink" title="Compus-Mobile-Application"></a>Compus-Mobile-Application</h1><ul>
+<li>Introduction</li>
+<li>Welcome Activity</li>
+<li>Main Activity</li>
+<li>Login Activity</li>
+<li>Weather/Announcement/News Activity</li>
+<li>APK Installation</li>
+</ul>
+<hr>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This is the graduation project for my bachelor degree.I finished it in August 2015, and I didn’t have a GitHub account at that time, I find it today on my old laptop and decide to upload.Basically, this is my first project with Android, I start from this.Concretely, this is a complex of many functionalities.You can see the map here, you can log in and check your grade here(I can’t check my grades due to the cancellation of my campus account), you can receive announcements from the administrator…</p>
+<p>Now,I will introduct this app and all of its functionalits by each window in order.</p>
+<h2 id="Welcome-Activity"><a href="#Welcome-Activity" class="headerlink" title="Welcome Activity"></a>Welcome Activity</h2><hr>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/welcome.png" alt="Welcome Activity" title="">
+                </div>
+                <div class="image-caption">Welcome Activity</div>
+            </figure></h2><p>Basically,I design this Activity for show the logo of my mother school and get some time to prepare for next activity.After 5 seconds,when the next activity(main activity) is ready,this activity will disapear.</p>
+<h2 id="Main-Activity"><a href="#Main-Activity" class="headerlink" title="Main Activity"></a>Main Activity</h2><hr>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/main.png" alt="Main Activity" title="">
+                </div>
+                <div class="image-caption">Main Activity</div>
+            </figure>
+<hr>
+<p>This is the main activity of this application.You only can start launch all the functions form here.You can use and check the map here,you can see some latest news from the Marquee bar(on the bottom of this activity,it will update form the university website automatically),it will send show you the latest announcement by a popup(announcement is get from a specific blog I set,the app will grasp the data from that blog automatically,when it finds an information new,it will show you that by a popup).</p>
+<h3 id="About-MAP"><a href="#About-MAP" class="headerlink" title="About MAP"></a>About MAP</h3><hr>
+<p>In this part,I use the BAIDU MAP API to achive my function,this is not very complicated,I refered to the official tutotials online.</p>
+<h3 id="About-Popup"><a href="#About-Popup" class="headerlink" title="About Popup"></a>About Popup</h3><hr>
+<p>A thread will check the blog per 2 seconds,once it fins any new announcement,it will tell the handler to show you a popup with the new announcement.</p>
+<p><img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/information.png" alt="Main Activity"></p>
+<h3 id="About-Marquee-Bar"><a href="#About-Marquee-Bar" class="headerlink" title="About Marquee Bar"></a>About Marquee Bar</h3><hr>
+<p>when this app was launced,our app will check the NJUPT(Nanjing University of Posts and Telecommunications) website and downloads three latest news and show it on the Marquee bar，it will show the motto of NJUPY as well.</p>
+<h2 id="Login-Activity"><a href="#Login-Activity" class="headerlink" title="Login Activity"></a>Login Activity</h2><hr>
+<p>This is the hardest part I faced on this entire project.In This part,I have to mocking logging in the grade system and get the grades back and dis play them,I need to use much html knowledge.At first of all,I download the Security code picture and display it on the activity,after user enter user name,password and Security code,I will use this information to mock loging in the system.Since I didn’t know and I can’t anything useful about how the grade system work,I have to test it again and again myself,I still remeber how much time it costed me to finish this part.After achiveing this function,user and check his grades in this app directly.</p>
+<hr>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/login.png" alt="Login Activity" title="">
+                </div>
+                <div class="image-caption">Login Activity</div>
+            </figure>
+<hr>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/grade.png" alt="Grade" title="">
+                </div>
+                <div class="image-caption">Grade</div>
+            </figure>
+<h2 id="Weather-Announcement-News-Activity"><a href="#Weather-Announcement-News-Activity" class="headerlink" title="Weather/Announcement/News Activity"></a>Weather/Announcement/News Activity</h2><hr>
+<p>This part is very easy,when user click these parts,the app will open a new activity and redirect the new activity to a specific link.It’s like a browser here.</p>
+<hr>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/weather.png" alt="Weather" title="">
+                </div>
+                <div class="image-caption">Weather</div>
+            </figure></h2><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/announcement.png" alt="Announcement" title="">
+                </div>
+                <div class="image-caption">Announcement</div>
+            </figure></h2><h2 id="-3"><a href="#-3" class="headerlink" title=""></a><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/s2117402/Compus-Mobile-Application/master/Image/news.png" alt="News" title="">
+                </div>
+                <div class="image-caption">News</div>
+            </figure></h2><h2 id="The-Project-in-Github"><a href="#The-Project-in-Github" class="headerlink" title="The Project in Github"></a>The Project in Github</h2><p><a href="https://github.com/s2117402/Compus-Mobile-Application" target="_blank" rel="external">Github</a></p>
+<hr>
+<h2 id="APK-Installation"><a href="#APK-Installation" class="headerlink" title="APK Installation"></a>APK Installation</h2><p><a href="https://github.com/s2117402/Compus-Mobile-Application/tree/master/APK" target="_blank" rel="external">Download APK</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-05-31T20:08:23.000Z" itemprop="dateUpdated">2017-05-31 15:08:23</time>
+</span><br>
+
+
+        
+        While there is life there is hope. 一息若存，希望不灭。
+        
+    </div>
+    <footer>
+        <a href="http://willsun.win">
+            <img src="/img/avatar.jpg" alt="Wei Sun">
+            Wei Sun
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Google-Map/">Google Map</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&title=《Compus Mobile Application》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&title=《Compus Mobile Application》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/05/31/Compus-Mobile-Application/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Compus Mobile Application》 — Will&url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/05/20/Real-Time-Vehicle-Locations/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Real-Time-Vehicle-Locations</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 's2117402',
+            repo: 'comments',
+            oauth: {
+                client_id: '6799ba3f98debb9cd4be',
+                client_secret: 'c630aa845bba4d5b8c53a71fbe755a34673d8627',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Wei Sun &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&title=《Compus Mobile Application》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&title=《Compus Mobile Application》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/05/31/Compus-Mobile-Application/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Compus Mobile Application》 — Will&url=http://willsun.win/2017/05/31/Compus-Mobile-Application/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/05/31/Compus-Mobile-Application/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://willsun.win/2017/05/31/Compus-Mobile-Application/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
