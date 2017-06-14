@@ -13,24 +13,24 @@
     
     
     
-    <title>Android Development:A problem about GPS | Will | While there is life there is hope. 一息若存，希望不灭。</title>
+    <title>Tips about Google Map development:1 | Will | While there is life there is hope. 一息若存，希望不灭。</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="Java,Android,GPS">
-    <meta name="description" content="I recently was doing my graduation project.I need to develop an android app with GPS sensor.I used to have this kind of experience,so I didn’t worry aboutthis part at beginning.But I still faced a pro">
-<meta name="keywords" content="Java,Android,GPS">
+    <meta name="keywords" content="Java,Android">
+    <meta name="description" content="When we want to set a marker at the google map.We have to get the instance of GoogleMap class first.        1.Declare a global GoogleMap Instance (like GoogleMap mMap);        2.Go to the function(abs">
+<meta name="keywords" content="Java,Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Development:A problem about GPS">
-<meta property="og:url" content="http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/index.html">
+<meta property="og:title" content="Tips about Google Map development:1">
+<meta property="og:url" content="http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/index.html">
 <meta property="og:site_name" content="Will">
-<meta property="og:description" content="I recently was doing my graduation project.I need to develop an android app with GPS sensor.I used to have this kind of experience,so I didn’t worry aboutthis part at beginning.But I still faced a pro">
-<meta property="og:updated_time" content="2017-06-11T04:28:56.000Z">
+<meta property="og:description" content="When we want to set a marker at the google map.We have to get the instance of GoogleMap class first.        1.Declare a global GoogleMap Instance (like GoogleMap mMap);        2.Go to the function(abs">
+<meta property="og:updated_time" content="2017-06-14T07:58:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Development:A problem about GPS">
-<meta name="twitter:description" content="I recently was doing my graduation project.I need to develop an android app with GPS sensor.I used to have this kind of experience,so I didn’t worry aboutthis part at beginning.But I still faced a pro">
+<meta name="twitter:title" content="Tips about Google Map development:1">
+<meta name="twitter:description" content="When we want to set a marker at the google map.We have to get the instance of GoogleMap class first.        1.Declare a global GoogleMap Instance (like GoogleMap mMap);        2.Go to the function(abs">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -112,7 +112,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Android Development:A problem about GPS</div>
+        <div class="flex-col header-title ellipsis">Tips about Google Map development:1</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -134,15 +134,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Android Development:A problem about GPS</h1>
+        <h1 class="title">Tips about Google Map development:1</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-06-11T04:20:37.000Z" itemprop="datePublished" class="page-time">
-  2017-06-10
+                <time datetime="2017-06-14T07:49:28.000Z" itemprop="datePublished" class="page-time">
+  2017-06-14
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
 
             
         </h5>
@@ -156,23 +156,16 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#onLocationChanged"><span class="post-toc-number">1.</span> <span class="post-toc-text">onLocationChanged()</span></a></li></ol>
-        </nav>
-    </aside>
-    
-<article id="post-Android-Development-A-problem-about-GPS"
+<article id="post-Tips-about-Google-Map-development-1"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Android Development:A problem about GPS</h1>
+        <h1 class="post-card-title">Tips about Google Map development:1</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-06-10 23:20:37" datetime="2017-06-11T04:20:37.000Z"  itemprop="datePublished">2017-06-10</time>
+            <time class="post-time" title="2017-06-14 02:49:28" datetime="2017-06-14T07:49:28.000Z"  itemprop="datePublished">2017-06-14</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
 
 
 
@@ -186,8 +179,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>I recently was doing my graduation project.I need to develop an android app with GPS sensor.I used to have this kind of experience,so I didn’t worry about<br>this part at beginning.But I still faced a problrm actually.Like when I tried to set a listener for LocationManger.There are some methods I need to define,for example:</p>
-<h5 id="onLocationChanged"><a href="#onLocationChanged" class="headerlink" title="onLocationChanged()"></a>onLocationChanged()</h5><p>After I defined it,and I walked withe the app on in my home,but no any location information return. onLocationChanged() wasn’t called in the whole process.<br>Finally,I figured it out,the GPS signal was too weak to be detected.I have to stay outdoors to get the GPS signal.</p>
+            <p>When we want to set a marker at the google map.We have to get the instance of GoogleMap class first.<br>        1.Declare a global GoogleMap Instance (like GoogleMap mMap);<br>        2.Go to the function(abstract void onMapReady(GoogleMap googleMap)) which is used to implement interface OnMapReadyCallback.<br>        3.Set mMap=googleMap in the function above,let mMap get the instance of googleMap.</p>
 
         </div>
 
@@ -195,7 +187,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-06-11T04:28:56.000Z" itemprop="dateUpdated">2017-06-10 23:28:56</time>
+    最后更新时间：<time datetime="2017-06-14T07:58:12.000Z" itemprop="dateUpdated">2017-06-14 02:58:12</time>
 </span><br>
 
 
@@ -216,7 +208,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GPS/">GPS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
 
 
             
@@ -226,7 +218,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&title=《Android Development:A problem about GPS》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&title=《Tips about Google Map development:1》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -236,22 +228,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&title=《Android Development:A problem about GPS》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&title=《Tips about Google Map development:1》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android Development:A problem about GPS》 — Will&url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&via=http://willsun.win" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Tips about Google Map development:1》 — Will&url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&via=http://willsun.win" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -271,21 +263,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/06/14/Tips-about-Google-Map-development-1/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Tips about Google Map development:1</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/06/01/Something-I-learned-about-HashMap/" id="post-next" class="post-nav-link">
+      <a href="/2017/06/10/Android-Development-A-problem-about-GPS/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Something I learned about HashMap</h4>
+        <h4 class="title">Android Development:A problem about GPS</h4>
       </a>
     </div>
   
@@ -368,7 +353,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&title=《Android Development:A problem about GPS》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&title=《Tips about Google Map development:1》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -378,22 +363,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&title=《Android Development:A problem about GPS》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&title=《Tips about Google Map development:1》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android Development:A problem about GPS》 — Will&url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/&via=http://willsun.win" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Tips about Google Map development:1》 — Will&url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/&via=http://willsun.win" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -404,7 +389,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://willsun.win/2017/06/10/Android-Development-A-problem-about-GPS/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://willsun.win/2017/06/14/Tips-about-Google-Map-development-1/" alt="微信分享二维码">
 </div>
 
 
