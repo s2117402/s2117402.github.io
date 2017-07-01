@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Parkingshare-System | Will | While there is life there is hope. 一息若存，希望不灭。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Java,Android,Google Map">
+    <meta name="description" content="Parkingshare-ApplicationBreif Introduction   This is a ParkingShare System based on my another project ‘Registration-and-Login-System’.In this project,people can   share their free parking space with">
+<meta name="keywords" content="Java,Android,Google Map">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parkingshare-System">
+<meta property="og:url" content="http://willsun.win/2017/07/01/Parkingshare-System/index.html">
+<meta property="og:site_name" content="Will">
+<meta property="og:description" content="Parkingshare-ApplicationBreif Introduction   This is a ParkingShare System based on my another project ‘Registration-and-Login-System’.In this project,people can   share their free parking space with">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/login.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/register.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/userview.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/locating.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/share.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/sharesuccess.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parkingview.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parkingspace.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parksuccess.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/stopsuccess.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/push.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/demonstration.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/loginserver.png">
+<meta property="og:updated_time" content="2017-07-01T06:53:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Parkingshare-System">
+<meta name="twitter:description" content="Parkingshare-ApplicationBreif Introduction   This is a ParkingShare System based on my another project ‘Registration-and-Login-System’.In this project,people can   share their free parking space with">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/login.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Wei Sun</h5>
+          <a href="mailto:s2118231@gmail.com" title="s2118231@gmail.com" class="mail">s2118231@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/s2117402" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/u/3243274715" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Parkingshare-System</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Parkingshare-System</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-01T06:46:22.000Z" itemprop="datePublished" class="page-time">
+  2017-07-01
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Parkingshare-Application"><span class="post-toc-number">1.</span> <span class="post-toc-text">Parkingshare-Application</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Breif-Introduction"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">Breif Introduction</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Client-Terminal"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">Client Terminal</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Login-and-Register-Activity"><span class="post-toc-number">1.0.2.1.</span> <span class="post-toc-text">Login and Register Activity</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#User-Activity"><span class="post-toc-number">1.0.2.2.</span> <span class="post-toc-text">User Activity</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ShareParking-Activity"><span class="post-toc-number">1.0.2.3.</span> <span class="post-toc-text">ShareParking Activity</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FindParking-Activity"><span class="post-toc-number">1.0.2.4.</span> <span class="post-toc-text">FindParking Activity</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Server-Terminal"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">Server Terminal</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-How-to-get-the-5-closet-parking-spaces"><span class="post-toc-number">1.0.3.1.</span> <span class="post-toc-text">1.How to get the 5 closet parking spaces?</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-Format-of-parkingspaces-informations"><span class="post-toc-number">1.0.3.2.</span> <span class="post-toc-text">2.Format of parkingspaces informations</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-The-Push-from-server"><span class="post-toc-number">1.0.3.3.</span> <span class="post-toc-text">2.The Push from server</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Here-is-the-view-of-some-logs-in-server"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Here is the view of some logs in server</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Parkingshare-System"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Parkingshare-System</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-07-01 01:46:22" datetime="2017-07-01T06:46:22.000Z"  itemprop="datePublished">2017-07-01</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Parkingshare-Application"><a href="#Parkingshare-Application" class="headerlink" title="Parkingshare-Application"></a>Parkingshare-Application</h1><h3 id="Breif-Introduction"><a href="#Breif-Introduction" class="headerlink" title="Breif Introduction"></a>Breif Introduction</h3><p>   This is a ParkingShare System based on my another project ‘Registration-and-Login-System’.In this project,people can<br>   share their free parking space with people and they also can find a free parking space.This system has two terminals.One<br>   is the client terminal(Android APP),the other is a server timinal(Python Flask).Android APP is open for users and server is<br>   used to manage the whole system.</p>
+<h3 id="Client-Terminal"><a href="#Client-Terminal" class="headerlink" title="Client Terminal"></a>Client Terminal</h3><p>   This terminal is an Android APP actually.The app is formed with 5 activities.(Login,Register,UserView,ShareParking Findparking).</p>
+<h4 id="Login-and-Register-Activity"><a href="#Login-and-Register-Activity" class="headerlink" title="Login and Register Activity"></a>Login and Register Activity</h4><p>   The first activity is the Login Activty,this activiey and theother Register Activity are completely based on an other project I finished,so I won’t mention these too much here.</p>
+<hr>
+<div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/login.png" width="400" height="600" alt="Login"><br></div>
+
+<hr>
+<div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/register.png" width="400" height="600" alt="Login"><br></div>
+
+<hr>
+<h4 id="User-Activity"><a href="#User-Activity" class="headerlink" title="User Activity"></a>User Activity</h4><p>   Here you can see two buttons.They mean two functions avaliable,you can press ‘Share my parking space’ to share your free<br>   parking space with people,or you can press ‘Find a parking space’ to find a free parking space.</p>
+<hr>
+<div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/userview.png" width="400" height="600" alt="Login"><br></div>
+
+<hr>
+<h4 id="ShareParking-Activity"><a href="#ShareParking-Activity" class="headerlink" title="ShareParking Activity"></a>ShareParking Activity</h4><p>   Here you can share your free parking space(Before you want to share your parking space,please make sure you are standing at<br>   the parking space).At first,you should name your shared parking space and give some description about it.Then press ‘Get location’ to get the GPS information(The system will mark your location in the googlemap),then submit it.Here are some pictures of possible cases below.</p>
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/locating.png" width="400" height="600" alt="Locating"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/share.png" width="400" height="600" alt="ShareView"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/sharesuccess.png" width="400" height="600" alt="sucess"><br></div>
+
+<hr>
+<h4 id="FindParking-Activity"><a href="#FindParking-Activity" class="headerlink" title="FindParking Activity"></a>FindParking Activity</h4><pre><code>This activity is desiged for the people to find a parking space.At first,you can press the &apos;EXPLORE PARKINGSPACE&apos; button
+to find some parking spaces(5 max in 5 miles) are close to your current location.Then the app will mark all these avalible parking spaces at google map,and you can get the names and descriptions at the google map(you even can get the navigation to the parkingspace you selected).When you have choose the parking space already,press the &apos;Start parking&apos; button
+to occupy the space,the server will send you a push to inform your parking information meanwhile.When you finished the parking ,press &apos;Stop parking&apos; to release the parking space.
+</code></pre><hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parkingview.png" width="400" height="600" alt="ParkingAc"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parkingspace.png" width="400" height="600" alt="ParkingSpace Marker"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/parksuccess.png" width="400" height="600" alt="Startparking"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/stopsuccess.png" width="400" height="600" alt="Stopparking"><br></div>
+
+<hr>
+ <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/push.png" width="600" height="200" alt="ParkinginfoPush"><br></div>
+
+<hr>
+<h3 id="Server-Terminal"><a href="#Server-Terminal" class="headerlink" title="Server Terminal"></a>Server Terminal</h3><p>   In the server terminal,I use the Python(Flask) to build a web server to process all information.For the database,I use the Sqlite3 to build two databases.One is used to store the users information,the other is used to store the parkingspace information.Here are three important points below I want to mention.</p>
+<h4 id="1-How-to-get-the-5-closet-parking-spaces"><a href="#1-How-to-get-the-5-closet-parking-spaces" class="headerlink" title="1.How to get the 5 closet parking spaces?"></a>1.How to get the 5 closet parking spaces?</h4><pre><code>After I get the user&apos;s location.how can I get 5 closet parkingspaces from database,I got confused about this question for
+long time.I don&apos;t want use very complicated SQL language to achive this.As we all know,5 miles from user&apos;s location is a       circle,what I  did is find the largest rectangle in this circle,then find the parking spaces in this rectangle from     database,that&apos;s much easier than finding some locations from the range of a circle.
+ &lt;div align=center&gt;
+</code></pre><p><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/demonstration.png" width="400" height="400" alt="demonstration"><br></p>
+<h4 id="2-Format-of-parkingspaces-informations"><a href="#2-Format-of-parkingspaces-informations" class="headerlink" title="2.Format of parkingspaces informations"></a>2.Format of parkingspaces informations</h4><pre><code>After the server get all parkingspaces information and want to send them back to the client.I use the JSON format to
+transmit these parkingsapce information
+</code></pre><h4 id="2-The-Push-from-server"><a href="#2-The-Push-from-server" class="headerlink" title="2.The Push from server"></a>2.The Push from server</h4><pre><code>When user park his car sucessfully,the server will send a push to the user to inform him.I used a third-party
+ Push API called Jpush(Jiguang) to achive this.When the user log in the App sucessusfully,the system will use the       username as the alias and send it to the Jpush server.Then our parkingshare server can send jpush by username.
+</code></pre><hr>
+<h2 id="Here-is-the-view-of-some-logs-in-server"><a href="#Here-is-the-view-of-some-logs-in-server" class="headerlink" title="Here is the view of some logs in server"></a>Here is the view of some logs in server</h2> <div align="center"><br><img src="https://raw.githubusercontent.com/s2117402/Parkingshare-Application/master/Image/loginserver.png" width="600" height="200" alt="Logs"><br></div>
+
+<hr>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-07-01T06:53:56.000Z" itemprop="dateUpdated">2017-07-01 01:53:56</time>
+</span><br>
+
+
+        
+        While there is life there is hope. 一息若存，希望不灭。
+        
+    </div>
+    <footer>
+        <a href="http://willsun.win">
+            <img src="/img/avatar.jpg" alt="Wei Sun">
+            Wei Sun
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Google-Map/">Google Map</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/07/01/Parkingshare-System/&title=《Parkingshare-System》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/07/01/Parkingshare-System/&title=《Parkingshare-System》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/07/01/Parkingshare-System/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Parkingshare-System》 — Will&url=http://willsun.win/2017/07/01/Parkingshare-System/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/07/01/Parkingshare-System/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/06/14/Tips-about-Google-Map-development-1/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Tips about Google Map development:1</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 's2117402',
+            repo: 'comments',
+            oauth: {
+                client_id: '6799ba3f98debb9cd4be',
+                client_secret: 'c630aa845bba4d5b8c53a71fbe755a34673d8627',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Wei Sun &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://willsun.win/2017/07/01/Parkingshare-System/&title=《Parkingshare-System》 — Will&pic=http://willsun.win/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://willsun.win/2017/07/01/Parkingshare-System/&title=《Parkingshare-System》 — Will&source=While there is life there is hope. 一息若存，希望不灭。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://willsun.win/2017/07/01/Parkingshare-System/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Parkingshare-System》 — Will&url=http://willsun.win/2017/07/01/Parkingshare-System/&via=http://willsun.win" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://willsun.win/2017/07/01/Parkingshare-System/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://willsun.win/2017/07/01/Parkingshare-System/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
